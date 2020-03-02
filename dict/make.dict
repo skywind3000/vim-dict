@@ -1,0 +1,10 @@
+CFLAGS
+LDFLAGS
+PHONY
+addsuffix
+basename
+cflags
+findstring
+patsubst
+shared
+wildcard

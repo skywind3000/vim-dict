@@ -1,0 +1,12 @@
+--exclude
+LBUFFER
+LD_PRELOAD
+alias
+basename
+bindkey
+command
+dirname
+export
+mkdir
+zmodload
+zpty
