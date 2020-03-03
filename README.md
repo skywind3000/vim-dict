@@ -26,3 +26,31 @@ let g:config = {'text':['word']}
 ```VimL
 let g:config = {'text':['wordmax']}
 ```
+
+再挂载 c24k
+
+```VimL
+let g:config = {'text':['ultimate']}
+```
+
+## C20K 是什么？
+
+传统 Google 词汇 c10k 有很多缺少的单词，比如：
+
+```
+shout
+critic
+sixty
+emerge
+appoint
+marry
+troop
+pupil
+troop
+...
+```
+
+这些都是基础的不能再基础的单词，c10k 都缺乏，因为他们并没有根据语料库进行过校对。
+
+所以我对比了 COCA/BNC 语料库，增补了前一万的基础词，并且根据构词法数据库，增补了这些单词的所有变形体
+最终去掉和原来的重复，剩下 24K 单词。
