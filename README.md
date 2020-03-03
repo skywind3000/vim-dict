@@ -21,17 +21,12 @@ let g:vim_dict_dict = [
 let g:config = {'text':['word']}
 ```
 
-还可以挂在 c20k
+还可以挂上 c20k
 
 ```VimL
 let g:config = {'text':['wordmax']}
 ```
 
-再挂载 c24k
-
-```VimL
-let g:config = {'text':['ultimate']}
-```
 
 ## C20K 是什么？
 
