@@ -112,8 +112,13 @@ function! s:load_dict(ft)
 endfunc
 
 
+
+"----------------------------------------------------------------------
+" autocmd
+"----------------------------------------------------------------------
 augroup VimDictTags
 	au!
 	au FileType * call s:load_dict(&ft)
 augroup END
+
 
