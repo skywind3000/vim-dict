@@ -84,7 +84,7 @@ function! s:load_dict(ft)
 	let fts = [a:ft]
 	if has_key(g:vim_dict_config, a:ft)
 		for ft in g:vim_dict_config[a:ft]
-			call extend(fts, ft)
+			let fts += [ft]
 		endfor
 	endif
 	let dict = [s:dict] + g:vim_dict_dict
