@@ -83,9 +83,18 @@ function! s:load_dict(ft)
 	let names = []
 	let fts = [a:ft]
 	if has_key(g:vim_dict_config, a:ft)
-		for ft in g:vim_dict_config[a:ft]
-			let fts += [ft]
-		endfor
+		let hh = g:vim_dict_config[a:ft]
+		if type(hh) == v:t_list
+			let fts = hh
+		elseif type(hh) == v:t_string
+			let fts = []
+			for ft in split(hh)
+				let ft = substitute(ft, '^\s*\(.\{-}\)\s*$', '\1', '')
+				if ft != ''
+					let fts += [ft]
+				endif
+			endif
+		endif
 	endif
 	let dict = [s:dict] + g:vim_dict_dict
 	let tags = [s:tags] + g:vim_dict_tags

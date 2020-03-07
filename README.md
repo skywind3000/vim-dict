@@ -20,6 +20,11 @@ let g:vim_dict_dict = [
 ## File type override
 
 ```VimL
-let g:vim_dict_config = {'html':['javascript', 'css'], 'markdown':['text']}
+let g:vim_dict_config = {'html':'html,javascript,css', 'markdown':'text'}
 ```
 
+## Disable certain types
+
+```VimL
+let g:vim_dict_config = {'text': ''}
+```
