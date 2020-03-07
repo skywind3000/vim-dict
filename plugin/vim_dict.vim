@@ -93,7 +93,7 @@ function! s:load_dict(ft)
 				if ft != ''
 					let fts += [ft]
 				endif
-			endif
+			endfor
 		else
 			let fts = []
 		endif
