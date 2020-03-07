@@ -94,6 +94,8 @@ function! s:load_dict(ft)
 					let fts += [ft]
 				endif
 			endif
+		else
+			let fts = []
 		endif
 	endif
 	let dict = [s:dict] + g:vim_dict_dict
