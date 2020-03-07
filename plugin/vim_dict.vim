@@ -88,7 +88,7 @@ function! s:load_dict(ft)
 			let fts = hh
 		elseif type(hh) == v:t_string
 			let fts = []
-			for ft in split(hh)
+			for ft in split(hh, ',')
 				let ft = substitute(ft, '^\s*\(.\{-}\)\s*$', '\1', '')
 				if ft != ''
 					let fts += [ft]
