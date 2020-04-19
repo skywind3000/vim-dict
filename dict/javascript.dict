@@ -1313,6 +1313,7 @@ test
 textContent
 textDecoration textLength textRendering to transform u1 u2 underlinePosition
 textarea	top	unescape	untaint	window
+then
 this
 this	throw	throws	transient	true
 throw
