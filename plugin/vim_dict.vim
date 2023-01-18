@@ -84,9 +84,9 @@ function! s:load_dict(ft)
 	let fts = [a:ft]
 	if has_key(g:vim_dict_config, a:ft)
 		let hh = g:vim_dict_config[a:ft]
-		if type(hh) == v:t_list
+		if type(hh) == type([])
 			let fts = hh
-		elseif type(hh) == v:t_string
+		elseif type(hh) == type('')
 			let fts = []
 			for ft in split(hh, ',')
 				let ft = substitute(ft, '^\s*\(.\{-}\)\s*$', '\1', '')
